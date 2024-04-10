@@ -7,4 +7,7 @@
 def decode(password):
     new_password = ""
     for digit in password:
-        new_password += (digit-3) % 10
+        new_digit = str(int(digit-3) % 10)
+        new_password += new_digit
+
+    return new_password
