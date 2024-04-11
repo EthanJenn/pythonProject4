@@ -1,14 +1,10 @@
-from main import decode
-
-
 def encode_password(password):
     encoded_password = ""
     for digit in password:
-        encoded_digit = str((int(digit) + 3) % 10)
+        encoded_digit = str((int(digit) + 3) % 10) 
         encoded_password += encoded_digit
     return encoded_password
-
-
+#e
 def main():
     while True:
         print()
@@ -32,7 +28,6 @@ def main():
             break
         else:
             print("Invalid option")
-
 
 if __name__ == "__main__":
     main()
